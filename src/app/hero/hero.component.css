@@ -1,0 +1,105 @@
+.socials {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  justify-content: center;
+  z-index: 99;
+  top: 90%;
+  left: 13%;
+}
+.socials > a > svg {
+  color: #ff9190;
+  width: 32px;
+  height: 32px;
+  transform: scale(.8);
+  transition: transform .3s;
+  margin: 0 0.8rem 0 0;
+}
+.socials > a > svg:hover {
+  transform: scale(1);
+  transition: transform .3s;
+  color: #ff414c;
+}
+@media only screen and (max-width: 1443.98px) {
+  .socials {
+    top: 90%;
+    left: 8%;
+  }
+}
+@media only screen and (max-width: 1199.98px) {
+  .socials {
+    top: 90%;
+    left: 7%;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .socials {
+    top: 90%;
+    left: 40%;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  .socials {
+    top: 90%;
+    left: 40%;
+  }
+}
+@media only screen and (max-width: 445.98px) {
+  .socials {
+    top: 90%;
+    left: 34%;
+  }
+}
+
+/* ====================== BACKGROUND ELEMENTS ====================== */
+
+/* Set parent to overflow hidden and position relative to clip excess image */
+section {
+  position: relative;
+  overflow: hidden;
+} 
+
+._element1 {
+  position: absolute;
+  width: 50em;
+  top: 10%;
+  left: 75%;
+  overflow: hidden;
+  z-index: 99;
+}
+@media only screen and (max-width: 1443.98px) {
+  ._element1 {
+    width: 50em;
+    top: 10%;
+    left: 75%;
+  }
+}
+@media only screen and (max-width: 1023.98px) {
+  ._element1 {
+    width: 45em;
+    top: 10%;
+    left: 75%;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  ._element1 {
+    width: 30em;
+    top: 0;
+    left: 60%;
+    transform: scaleX(-1) rotate(5deg);
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  ._element1 {
+    width: 18em;
+    top: 30%;
+    left: 55%;
+  }
+}
+@media only screen and (max-width: 475.98px) {
+  ._element1 {
+    width: 18em;
+    top: 30%;
+    left: 57%;
+  }
+}
