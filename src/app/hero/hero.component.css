@@ -50,6 +50,13 @@
     left: 34%;
   }
 }
+@media only screen and (max-width: 379.98px) {
+  .socials {
+    top: 90%;
+    left: 32%;
+  }
+}
+
 
 /* ====================== BACKGROUND ELEMENTS ====================== */
 

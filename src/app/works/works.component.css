@@ -34,14 +34,11 @@ section {
   height: auto;
   width: 100vw;
 }
-.works-grid {
+.works-wrapper {
   width: 100vw;
   height: auto;
-  display: grid;
-  grid-template-rows:    repeat(7, 1fr);
-  grid-template-columns: repeat(10, 1fr);
+  padding: 6em 6em 0 6em;
 }
-
 
 /* ========================== WORKS INTRO CONTENT ========================== */
 .works_intro {
@@ -51,22 +48,35 @@ section {
   grid-column: 4 / span 4;
   justify-self: center;
 }
+/* PORTFOLIO CARDS */
+.portfolio-card  {
+  background-color:darksalmon;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+.portfolio-card img {
+  width: 100%;
+  padding: 2rem;
+}
+.subheading {
+  font-size: 1.5rem;
+}
+.proj-contents {
+  margin-bottom: 7rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 
 /* ========================== PROJECTS CARD PRESENTATION ========================== */
-.project-cards, .vertical-project-cards {
+.project-cards {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
-}
-.project-cards {
-  grid-row:    3 / span 4;
-  grid-column: 2 / span 8;
-}
-.vertical-project-cards{
-  grid-row:    1 / span 6;
-  grid-column: 2 / span 8;
 }
 .card1, .card2, .card3 {
   margin: 1rem 3rem 1rem 3rem;
@@ -77,11 +87,6 @@ section {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   padding: 1rem;
   border-radius:30px;
-}
-.card4, .card5, .card6, .card7 {
-  margin: 1rem 3rem 1rem 3rem;
-  height: 20.5rem;
-  width: 35rem;
 }
 .card-content {
   width: 100%;
@@ -108,7 +113,6 @@ section {
 .card6:hover,
 .card6:hover
 {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   position: relative;
   transition: all 0.25s ease-in-out 0s;
 }
@@ -130,36 +134,14 @@ section {
   background-position:center;
   background-repeat:no-repeat;
 }
-.card4 {
-  background:url('../../assets/images/lnt.png');
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-}
-.card5 {
-  background:url('../../assets/images/veritru.png');
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-}
-.card6 {
-  background:url('../../assets/images/startup.png');
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-}
-.card7 {
-  background:url('../../assets/images/lacallecafe.png');
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-}
+
 
 
 /* ========================== TEXT ANIMATION ========================== */
 .hightlights, .highlights>.tilt {
   display: inline-flex;
   flex-direction: row;
+  margin-bottom: 1rem;
 }
 .tilt {
   animation: floating 5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
@@ -196,3 +178,19 @@ section {
   75% { color: #e28e82; }
   100% { color: #ff414c; }
 }
+
+@media only screen and (max-width: 1443.98px) { }
+@media only screen and (max-width: 1199.98px) { }
+@media only screen and (max-width: 767.98px) { }
+@media only screen and (max-width: 575.98px) {
+  .works-wrapper {
+    padding: 2em 2em 0 2em;
+  }
+  .highlights {
+    font-size: 2rem;
+  }
+  .card1, .card2, .card3 {
+    margin: 0 0 2rem 0;
+  }
+}
+@media only screen and (max-width: 445.98px) { }
