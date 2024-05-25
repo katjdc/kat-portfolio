@@ -21,8 +21,14 @@ export default function Home() {
             <p className="text-lg mb-10">
               Thank you for visiting my portfolio! I&apos;m currently working on
               something amazing and will be launching soon. Feel free to reach
-              out to me at contact@example.com for any inquiries or
-              collaborations.
+              out to me at{' '}
+              <Link
+                href={'mailto:katrinejdc@gmail.com'}
+                className="font-semibold"
+              >
+                katrinejdc@gmail.com 
+              </Link>
+              {' '}for any inquiries or collaborations.
             </p>
             <Socials />
           </div>
