@@ -9,8 +9,9 @@ const config = {
       colors: {
         'kat-primary': '#44624A',
         'kat-secondary': '#F1EBE1',
-        'kat-accent-1': '#8BA888',
-        'kat-accent-2': '#C0CFB2',
+        'kat-accent': '#FFCA75',
+        'kat-mono-1': '#8BA888',
+        'kat-mono-2': '#C0CFB2',
       },
     },
   },
