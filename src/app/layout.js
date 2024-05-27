@@ -1,4 +1,4 @@
-import './globals.css'
+import '@/styles/globals.css'
 import { montserrat } from '@/lib/fonts'
 
 export const metadata = {
