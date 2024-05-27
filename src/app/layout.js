@@ -1,5 +1,5 @@
 import './globals.css'
-import { montserrat } from '@/utils/fonts'
+import { montserrat } from '@/lib/fonts'
 
 export const metadata = {
   title: 'Katrine Joy Dela Cruz - UI/UX Designer',
