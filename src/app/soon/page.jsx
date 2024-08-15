@@ -1,7 +1,9 @@
+import Link from 'next/link'
+import React from 'react'
+
 import { Logo } from '@/components/kat-logo'
 import { LaunchingSoonGIF } from '@/components/launching-soon-gif'
 import { Socials } from '@/components/socials'
-import Link from 'next/link'
 
 export default function Soon() {
   return (
@@ -26,9 +28,9 @@ export default function Soon() {
                 href={'mailto:katrinejdc@gmail.com'}
                 className="font-semibold"
               >
-                katrinejdc@gmail.com 
-              </Link>
-              {' '}for any inquiries or collaborations.
+                katrinejdc@gmail.com
+              </Link>{' '}
+              for any inquiries or collaborations.
             </p>
             <Socials />
           </div>
