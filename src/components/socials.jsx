@@ -1,6 +1,6 @@
 import Link from 'next/link'
-
-import { AiFillLinkedin, AiFillInstagram } from 'react-icons/ai'
+import React from 'react'
+import { AiFillInstagram, AiFillLinkedin } from 'react-icons/ai'
 
 export function Socials() {
   return (
