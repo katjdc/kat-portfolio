@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { montserrat } from '@/lib/fonts'
+import { montserrat, nohemi } from '@/lib/fonts'
 
 import '@/styles/globals.css'
 
@@ -12,8 +12,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={montserrat.className}>{children}</body>
+    <html lang="en" className={`${montserrat.className} ${nohemi.variable}`}>
+      <body>
     </html>
   )
 }
