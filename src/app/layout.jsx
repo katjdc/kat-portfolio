@@ -2,6 +2,9 @@ import React from 'react'
 
 import { montserrat, nohemi } from '@/lib/fonts'
 
+import { Navbar } from '@/components/navbar'
+import { Wrapper } from '@/components/wrapper'
+
 import '@/styles/globals.css'
 
 export const metadata = {
@@ -14,6 +17,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${montserrat.className} ${nohemi.variable}`}>
       <body>
+        <main className="relative overflow-hidden bg-kat-backdrop">
+          <Wrapper>
+            <header>
+              <Navbar />
+            </header>
+            {children}
+          </Wrapper>
+        </main>
+      </body>
     </html>
   )
 }
