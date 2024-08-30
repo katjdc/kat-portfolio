@@ -18,12 +18,13 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        moreSugar: ['MoreSugar', 'cursive'],
+        heading: ['var(--font-nohemi)'],
       },
       colors: {
         'kat-primary': '#44624A',
         'kat-secondary': '#F1EBE1',
         'kat-accent': '#FF9D00',
+        'kat-backdrop': '#F9F9F9',
         'kat-mono-1': '#8BA888',
         'kat-mono-2': '#C0CFB2',
         border: 'hsl(var(--border))',
