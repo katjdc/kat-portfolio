@@ -18,7 +18,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        moreSugar: ['MoreSugar', 'cursive'],
+        heading: ['var(--font-nohemi)'],
       },
       colors: {
         'kat-primary': '#44624A',
