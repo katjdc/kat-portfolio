@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import { AiFillInstagram, AiFillLinkedin } from 'react-icons/ai'
 import { HiOutlineMenu } from 'react-icons/hi'
 
 import { Logo } from '@/components/kat-logo'
@@ -21,38 +22,38 @@ export function Navbar() {
             <span className="sr-only">Toggle navigation menu</span>
           </Button>
         </SheetTrigger>
-        <SheetContent side="left">
-          <Link href="#">
+        <SheetContent side="left" className="bg-kat-backdrop">
+          <Link href="/">
             <Logo />
             <span className="sr-only">Kat</span>
           </Link>
           <div className="grid gap-2 py-6">
             <Link
-              className="w-full py-2 font-moreSugar text-lg font-semibold"
+              className="w-full py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
               href="#"
             >
               Home
             </Link>
             <Link
-              className="w-full py-2 font-moreSugar text-lg font-semibold"
+              className="w-full py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
               href="#"
             >
               About
             </Link>
             <Link
-              className="w-full py-2 font-moreSugar text-lg font-semibold"
+              className="w-full py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
               href="#"
             >
               Services
             </Link>
             <Link
-              className="w-full py-2 font-moreSugar text-lg font-semibold"
+              className="w-full py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
               href="#"
             >
               Portfolio
             </Link>
             <Link
-              className="w-full py-2 font-moreSugar text-lg font-semibold"
+              className="w-full py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
               href="#"
             >
               Contact
@@ -68,7 +69,7 @@ export function Navbar() {
         <NavigationMenuList>
           <NavigationMenuLink asChild>
             <Link
-              className="h-9 w-max justify-center rounded-md bg-white px-4 py-2 font-moreSugar text-kat-primary text-md font-bold transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
+              className="h-9 w-max justify-center rounded-md px-4 py-2 font-heading text-kat-primary text-md font-semibold transition-colors hover:text-kat-accent focus:text-kat-accent focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-kat-accent/50 data-[state=open]:bg-kat-accent/50 dark:text-white dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:text-kat-accent dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
               href="#"
             >
               Home
@@ -76,7 +77,7 @@ export function Navbar() {
           </NavigationMenuLink>
           <NavigationMenuLink asChild>
             <Link
-              className="h-9 w-max justify-center rounded-md bg-white px-4 py-2 font-moreSugar text-kat-primary text-md font-bold transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
+              className="h-9 w-max justify-center rounded-md px-4 py-2 font-heading text-kat-primary text-md font-semibold transition-colors hover:text-kat-accent focus:text-kat-accent focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-kat-accent/50 data-[state=open]:bg-kat-accent/50 dark:text-white dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:text-kat-accent dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
               href="#"
             >
               About
@@ -84,7 +85,7 @@ export function Navbar() {
           </NavigationMenuLink>
           <NavigationMenuLink asChild>
             <Link
-              className="h-9 w-max justify-center rounded-md bg-white px-4 py-2 font-moreSugar text-kat-primary text-md font-bold transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
+              className="h-9 w-max justify-center rounded-md px-4 py-2 font-heading text-kat-primary text-md font-semibold transition-colors hover:text-kat-accent focus:text-kat-accent focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-kat-accent/50 data-[state=open]:bg-kat-accent/50 dark:text-white dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:text-kat-accent dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
               href="#"
             >
               Services
@@ -92,7 +93,7 @@ export function Navbar() {
           </NavigationMenuLink>
           <NavigationMenuLink asChild>
             <Link
-              className="h-9 w-max justify-center rounded-md bg-white px-4 py-2 font-moreSugar text-kat-primary text-md font-bold transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
+              className="h-9 w-max justify-center rounded-md px-4 py-2 font-heading text-kat-primary text-md font-semibold transition-colors hover:text-kat-accent focus:text-kat-accent focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-kat-accent/50 data-[state=open]:bg-kat-accent/50 dark:text-white dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:text-kat-accent dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
               href="#"
             >
               Portfolio
@@ -100,7 +101,7 @@ export function Navbar() {
           </NavigationMenuLink>
           <NavigationMenuLink asChild>
             <Link
-              className="h-9 w-max justify-center rounded-md bg-white px-4 py-2 font-moreSugar text-kat-primary text-md font-bold transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
+              className="h-9 w-max justify-center rounded-md px-4 py-2 font-heading text-kat-primary text-md font-semibold transition-colors hover:text-kat-accent focus:text-kat-accent focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-kat-accent/50 data-[state=open]:bg-kat-accent/50 dark:text-white dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:text-kat-accent dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
               href="#"
             >
               Contact
@@ -108,6 +109,22 @@ export function Navbar() {
           </NavigationMenuLink>
         </NavigationMenuList>
       </NavigationMenu>
+      <div className="flex">
+        <Link className="mr-6 hidden lg:flex" href="#">
+          <AiFillLinkedin
+            size={32}
+            className="text-kat-primary dark:text-white hover:text-kat-accent"
+          />
+          <span className="sr-only">LinkedIn</span>
+        </Link>
+        <Link className="mr-6 hidden lg:flex" href="#">
+          <AiFillInstagram
+            size={32}
+            className="text-kat-primary dark:text-white hover:text-kat-accent"
+          />
+          <span className="sr-only">Instagram</span>
+        </Link>
+      </div>
     </nav>
   )
 }
