@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { AiFillInstagram, AiFillLinkedin } from 'react-icons/ai'
-import { HiOutlineMenu } from 'react-icons/hi'
+import { HiMenu } from 'react-icons/hi'
 
 import { Logo } from '@/components/kat-logo'
 import { Button } from '@/components/ui/button'
@@ -14,46 +14,50 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 
 export function Navbar() {
   return (
-    <nav className="flex h-20 w-full shrink-0 items-center justify-between">
+    <nav className="flex h-20 w-full items-center justify-between">
       <Sheet>
+        <Link href="/" className="lg:hidden">
+          <Logo />
+          <span className="sr-only">Kat</span>
+        </Link>
         <SheetTrigger asChild>
-          <Button className="lg:hidden" size="icon" variant="outline">
-            <HiOutlineMenu className="h-6 w-6" />
+          <Button className="lg:hidden" size="icon" variant="ghost">
+            <HiMenu className="h-6 w-6 text-kat-primary" />
             <span className="sr-only">Toggle navigation menu</span>
           </Button>
         </SheetTrigger>
-        <SheetContent side="left" className="bg-kat-backdrop">
+        <SheetContent side="right" className="w-full bg-kat-backdrop">
           <Link href="/">
             <Logo />
             <span className="sr-only">Kat</span>
           </Link>
-          <div className="grid gap-2 py-6">
+          <div className="flex flex-col my-8 gap-4">
             <Link
-              className="w-full py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
+              className="w-full text-center py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
               href="#"
             >
               Home
             </Link>
             <Link
-              className="w-full py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
+              className="w-full text-center py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
               href="#"
             >
               About
             </Link>
             <Link
-              className="w-full py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
+              className="w-full text-center py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
               href="#"
             >
               Services
             </Link>
             <Link
-              className="w-full py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
+              className="w-full text-center py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
               href="#"
             >
               Portfolio
             </Link>
             <Link
-              className="w-full py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
+              className="w-full text-center py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
               href="#"
             >
               Contact
@@ -109,15 +113,15 @@ export function Navbar() {
           </NavigationMenuLink>
         </NavigationMenuList>
       </NavigationMenu>
-      <div className="flex">
-        <Link className="mr-6 hidden lg:flex" href="#">
+      <div className="hidden lg:flex">
+        <Link className="mr-6" href="#">
           <AiFillLinkedin
             size={32}
             className="text-kat-primary dark:text-white hover:text-kat-accent"
           />
           <span className="sr-only">LinkedIn</span>
         </Link>
-        <Link className="mr-6 hidden lg:flex" href="#">
+        <Link className="mr-6" href="#">
           <AiFillInstagram
             size={32}
             className="text-kat-primary dark:text-white hover:text-kat-accent"
