@@ -14,7 +14,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 
 export function Navbar() {
   return (
-    <nav className="flex h-20 w-full items-center justify-between">
+    <nav className="flex fixed w-full h-20 px-4 sm:px-8 md:px-60 items-center justify-between z-10">
       <Sheet>
         <Link href="/" className="lg:hidden">
           <Logo />
@@ -27,40 +27,40 @@ export function Navbar() {
           </Button>
         </SheetTrigger>
         <SheetContent side="right" className="w-full bg-kat-backdrop">
-          <Link href="/">
+          {/* <Link href="/">
             <Logo />
             <span className="sr-only">Kat</span>
-          </Link>
-          <div className="flex flex-col my-8 gap-4">
+          </Link> */}
+          <div className="flex flex-col h-full items-center gap-4">
             <Link
               className="w-full text-center py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
-              href="#"
-            >
-              Home
-            </Link>
-            <Link
-              className="w-full text-center py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
-              href="#"
+              href="/#about"
             >
               About
             </Link>
             <Link
               className="w-full text-center py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
-              href="#"
+              href="/#services"
             >
               Services
             </Link>
             <Link
               className="w-full text-center py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
-              href="#"
+              href="/#works"
             >
-              Portfolio
+              Works
             </Link>
             <Link
               className="w-full text-center py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
-              href="#"
+              href="/#contact"
             >
               Contact
+            </Link>
+            <Link
+              className="w-full text-center py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
+              href="https://drive.google.com/file/d/1tlYayDly4ZSCMF4Y4uctR0nwNQpoo_cP/view?usp=sharing"
+            >
+              Resume
             </Link>
           </div>
         </SheetContent>
@@ -74,15 +74,7 @@ export function Navbar() {
           <NavigationMenuLink asChild>
             <Link
               className="h-9 w-max justify-center rounded-md px-4 py-2 font-heading text-kat-primary text-md font-semibold transition-colors hover:text-kat-accent focus:text-kat-accent focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-kat-accent/50 data-[state=open]:bg-kat-accent/50 dark:text-white dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:text-kat-accent dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
-              href="#"
-            >
-              Home
-            </Link>
-          </NavigationMenuLink>
-          <NavigationMenuLink asChild>
-            <Link
-              className="h-9 w-max justify-center rounded-md px-4 py-2 font-heading text-kat-primary text-md font-semibold transition-colors hover:text-kat-accent focus:text-kat-accent focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-kat-accent/50 data-[state=open]:bg-kat-accent/50 dark:text-white dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:text-kat-accent dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
-              href="#"
+              href="/#about"
             >
               About
             </Link>
@@ -90,7 +82,7 @@ export function Navbar() {
           <NavigationMenuLink asChild>
             <Link
               className="h-9 w-max justify-center rounded-md px-4 py-2 font-heading text-kat-primary text-md font-semibold transition-colors hover:text-kat-accent focus:text-kat-accent focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-kat-accent/50 data-[state=open]:bg-kat-accent/50 dark:text-white dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:text-kat-accent dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
-              href="#"
+              href="/#services"
             >
               Services
             </Link>
@@ -98,17 +90,25 @@ export function Navbar() {
           <NavigationMenuLink asChild>
             <Link
               className="h-9 w-max justify-center rounded-md px-4 py-2 font-heading text-kat-primary text-md font-semibold transition-colors hover:text-kat-accent focus:text-kat-accent focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-kat-accent/50 data-[state=open]:bg-kat-accent/50 dark:text-white dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:text-kat-accent dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
-              href="#"
+              href="/#works"
             >
-              Portfolio
+              Works
             </Link>
           </NavigationMenuLink>
           <NavigationMenuLink asChild>
             <Link
               className="h-9 w-max justify-center rounded-md px-4 py-2 font-heading text-kat-primary text-md font-semibold transition-colors hover:text-kat-accent focus:text-kat-accent focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-kat-accent/50 data-[state=open]:bg-kat-accent/50 dark:text-white dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:text-kat-accent dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
-              href="#"
+              href="/#contact"
             >
               Contact
+            </Link>
+          </NavigationMenuLink>
+          <NavigationMenuLink asChild>
+            <Link
+              className="h-9 w-max justify-center rounded-md px-4 py-2 font-heading text-kat-primary text-md font-semibold transition-colors hover:text-kat-accent focus:text-kat-accent focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-kat-accent/50 data-[state=open]:bg-kat-accent/50 dark:text-white dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:text-kat-accent dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
+              href="https://drive.google.com/file/d/1tlYayDly4ZSCMF4Y4uctR0nwNQpoo_cP/view?usp=sharing"
+            >
+              Resume
             </Link>
           </NavigationMenuLink>
         </NavigationMenuList>
