@@ -14,7 +14,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 
 export function Navbar() {
   return (
-    <nav className="flex fixed w-full h-20 px-4 sm:px-8 xl:px-60 items-center justify-between z-10">
+    <nav className="flex fixed w-full h-20 px-4 sm:px-8 xl:px-60 items-center justify-between z-50">
       <Sheet>
         <Link href="/" className="lg:hidden">
           <Logo />
