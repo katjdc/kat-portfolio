@@ -14,7 +14,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 
 export function Navbar() {
   return (
-    <nav className="flex fixed w-full h-20 px-4 sm:px-8 md:px-60 items-center justify-between z-10">
+    <nav className="flex fixed w-full h-20 px-4 sm:px-8 xl:px-60 items-center justify-between z-10">
       <Sheet>
         <Link href="/" className="lg:hidden">
           <Logo />
@@ -27,10 +27,6 @@ export function Navbar() {
           </Button>
         </SheetTrigger>
         <SheetContent side="right" className="w-full bg-kat-backdrop">
-          {/* <Link href="/">
-            <Logo />
-            <span className="sr-only">Kat</span>
-          </Link> */}
           <div className="flex flex-col h-full items-center gap-4">
             <Link
               className="w-full text-center py-2 font-heading text-lg font-semisemibold text-kat-primary focus:text-kat-accent data-[active]:bg-kat-accent data-[state=open]:bg-kat-accent"
