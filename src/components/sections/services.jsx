@@ -19,7 +19,7 @@ export function Services() {
     <section id="services">
       <div className="flex flex-col items-center justify-center text-center w-[90%] sm:w-[75%] mx-auto pt-48">
         <h3 className="text-xl text-kat-primary font-bold">Services</h3>
-        <p className="mt-4 sm:mt-6 text-base sm:text-lg font-semibold text-kat-primary">
+        <p className="mt-4 sm:mt-6 mx-0 md:mx-6 text-normal font-normal text-kat-primary">
           Explore my design services, from user interface and experience to
           prototyping and testing. Let&apos;s craft exceptional digital
           experiences together.
@@ -70,9 +70,10 @@ export function Services() {
       </div>
 
       {/* Tools Section */}
+      {/* Tools Section */}
       <div className="flex flex-col items-center justify-center text-center w-[90%] sm:w-[75%] mx-auto pt-20">
         <h3 className="text-xl font-bold text-kat-primary mb-8">Tools</h3>
-        <div className="flex justify-center space-x-6">
+        <div className="grid grid-cols-3 lg:grid-cols-6 gap-6 justify-items-center">
           <IoLogoFigma size={48} className="text-kat-primary" />
           <SiAdobexd size={48} className="text-kat-primary" />
           <SiAdobephotoshop size={48} className="text-kat-primary" />
