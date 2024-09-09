@@ -165,9 +165,9 @@ export function Works() {
                 </span>
               </div>
               <p className="my-8 text-[#4D5C41] text-sm mx-0 md:mr-20">
-                A modern landing page redesign to highlight the AI phone agent
-                and its key features, improving on the original website
-                (https://www.callhandler.ai).
+                An online boutique offering handcrafted scented candles with a
+                website that provides a seamless shopping experience in a white
+                and green theme reflecting purity and nature.
               </p>
               <button className="bg-[#BBBBBB] px-4 py-3 text-sm text-white rounded-xl cursor-default">
                 Coming Soon
