@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
-import { AiFillInstagram, AiFillLinkedin } from 'react-icons/ai'
 import { HiMenu } from 'react-icons/hi'
 
 import { Logo } from '@/components/kat-logo'
+import { Socials } from '@/components/socials'
 import { Button } from '@/components/ui/button'
 import {
   NavigationMenu,
@@ -110,20 +110,7 @@ export function Navbar() {
         </NavigationMenuList>
       </NavigationMenu>
       <div className="hidden lg:flex">
-        <Link className="mr-6" href="#">
-          <AiFillLinkedin
-            size={32}
-            className="text-kat-primary dark:text-white hover:text-kat-accent"
-          />
-          <span className="sr-only">LinkedIn</span>
-        </Link>
-        <Link className="mr-6" href="#">
-          <AiFillInstagram
-            size={32}
-            className="text-kat-primary dark:text-white hover:text-kat-accent"
-          />
-          <span className="sr-only">Instagram</span>
-        </Link>
+        <Socials />
       </div>
     </nav>
   )

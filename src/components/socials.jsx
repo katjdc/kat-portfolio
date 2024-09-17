@@ -4,17 +4,21 @@ import { AiFillInstagram, AiFillLinkedin } from 'react-icons/ai'
 
 export function Socials() {
   return (
-    <div className="flex flex-row gap-2 justify-center md:justify-start">
-      <Link href={'https://www.linkedin.com/in/kjdelacruz'}>
-        <div className="border-kat-primary border rounded-full p-2 sm:p-3 hover:bg-kat-mono-2">
-          <AiFillLinkedin size={24} sm={32} />
-        </div>
+    <>
+      <Link href={'https://www.linkedin.com/in/kjdelacruz'} className="mr-6">
+        <AiFillLinkedin
+          size={32}
+          className="text-kat-primary dark:text-white hover:text-kat-accent"
+        />
+        <span className="sr-only">LinkedIn</span>
       </Link>
-      <Link href={'https://www.instagram.com/kat.uix'}>
-        <div className="border-kat-primary border rounded-full p-2 sm:p-3 hover:bg-kat-mono-2">
-          <AiFillInstagram size={24} sm={32} />
-        </div>
+      <Link href={'https://www.instagram.com/kat.uix'} className="mr-6">
+        <AiFillInstagram
+          size={32}
+          className="text-kat-primary dark:text-white hover:text-kat-accent"
+        />
+        <span className="sr-only">Instagram</span>
       </Link>
-    </div>
+    </>
   )
 }
