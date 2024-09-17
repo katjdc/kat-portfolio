@@ -6,7 +6,7 @@ export function Works() {
   return (
     <section id="works">
       <div className="flex flex-col items-center justify-center text-center w-[90%] sm:w-[75%] mx-auto pt-28">
-        <h3 className="text-xl text-kat-primary font-bold">Work</h3>
+        <h3 className="text-xl text-kat-primary font-bold">Works</h3>
         <p className="mt-4 sm:mt-6 mx-0 md:mx-6 text-normal font-normal text-kat-primary">
           My projects reflect a deep understanding of design principles and a
           commitment to enhancing user engagement and satisfaction.
@@ -47,9 +47,9 @@ export function Works() {
             </p>
             <Link
               className="bg-[#659CA3] hover:bg-[#416A70] px-4 py-3 text-sm text-white rounded-xl"
-              href="https://veritru.vercel.app"
+              href="https://bit.ly/nt-marketingwebsiteprototype"
             >
-              View Website
+              View Prototype
               <HiMiniArrowUpRight className="inline-block ml-2" />
             </Link>
           </div>
