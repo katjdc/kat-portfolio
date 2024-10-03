@@ -14,7 +14,7 @@ export function Works() {
       </div>
 
       {/* Project Cards */}
-      <div className="relative mt-12 mx-auto space-y-16 w-[80%]">
+      <div className="relative mt-12 mx-auto space-y-16 w-[90%] sm:w-[80%]">
         {/* Project - Cally AI (Personal Project*/}
         <div className="bg-[#EEF4FF] relative flex flex-col-reverse h-[35rem] md:h-[25rem] p-8 rounded-xl shadow-lg overflow-hidden">
           {/* Background Div */}
@@ -53,8 +53,8 @@ export function Works() {
             </Link>
           </div>
           <div className="relative z-10">
-            <div className="absolute top-[-10.5rem] right-[-5rem] lg:top-[2rem] lg:right-[1rem] xl:top-[-1rem] xl:right-[1rem] w-[380px] h-[180px] lg:w-[500px] lg:h-[300px] xl:w-[600px] xl:h-[400px] bg-[url('/assets/laptop-cally.png')] bg-no-repeat bg-contain"></div>
-            <div className="absolute top-[-8.5rem] right-[-2rem] lg:top-[4rem] lg:right-[1rem] xl:top-[1rem] xl:right-[1rem] w-[100px] h-[200px] lg:w-[150px] lg:h-[290px] xl:w-[180px] xl:h-[320px] bg-[url('/assets/mobile-cally.png')] bg-no-repeat bg-contain"></div>
+            <div className="absolute top-[-13rem] right-[-2rem] lg:top-[2rem] lg:right-[1rem] xl:top-[-1rem] xl:right-[1rem] w-[380px] h-[180px] lg:w-[500px] lg:h-[300px] xl:w-[600px] xl:h-[400px] bg-[url('../components/assets/img/laptop-cally.png')] bg-no-repeat bg-contain"></div>
+            <div className="absolute top-[-11rem] right-0 lg:top-[4rem] lg:right-[1rem] xl:top-[1rem] xl:right-[1rem] w-[100px] h-[200px] lg:w-[150px] lg:h-[290px] xl:w-[180px] xl:h-[320px] bg-[url('../components/assets/img/mobile-cally.png')] bg-no-repeat bg-contain"></div>
           </div>
         </div>
 
@@ -97,8 +97,8 @@ export function Works() {
             </Link>
           </div>
           <div className="relative z-10">
-            <div className="absolute top-[-10.5rem] right-[-5rem] lg:top-[2rem] lg:right-[1rem] xl:top-[-1rem] xl:right-[1rem] w-[380px] h-[180px] lg:w-[500px] lg:h-[300px] xl:w-[600px] xl:h-[400px] bg-[url('/assets/laptop-nt.png')] bg-no-repeat bg-contain"></div>
-            <div className="absolute top-[-8.5rem] right-[-2rem] lg:top-[4rem] lg:right-[1rem] xl:top-[1rem] xl:right-[1rem] w-[100px] h-[200px] lg:w-[150px] lg:h-[290px] xl:w-[180px] xl:h-[320px] bg-[url('/assets/mobile-nt.png')] bg-no-repeat bg-contain"></div>
+            <div className="absolute top-[-13rem] right-[-2rem] lg:top-[2rem] lg:right-[1rem] xl:top-[-1rem] xl:right-[1rem] w-[380px] h-[180px] lg:w-[500px] lg:h-[300px] xl:w-[600px] xl:h-[400px] bg-[url('../components/assets/img/laptop-nt.png')] bg-no-repeat bg-contain"></div>
+            <div className="absolute top-[-11rem] right-0 lg:top-[4rem] lg:right-[1rem] xl:top-[1rem] xl:right-[1rem] w-[100px] h-[200px] lg:w-[150px] lg:h-[290px] xl:w-[180px] xl:h-[320px] bg-[url('../components/assets/img/mobile-nt.png')] bg-no-repeat bg-contain"></div>
           </div>
         </div>
 
@@ -141,14 +141,15 @@ export function Works() {
             </Link>
           </div>
           <div className="relative z-10">
-            <div className="absolute top-[-12rem] right-[-5rem] lg:top-[2rem] lg:right-[1rem] xl:top-0 xl:right-[1rem] w-[380px] h-[180px] lg:w-[500px] lg:h-[300px] xl:w-[600px] xl:h-[400px] bg-[url('/assets/laptop-veritru.png')] bg-no-repeat bg-contain"></div>
-            <div className="absolute top-[-10rem] right-[-2rem] lg:top-[4rem] lg:right-[1rem] xl:top-[2rem] xl:right-[1rem] w-[100px] h-[200px] lg:w-[150px] lg:h-[290px] xl:w-[180px] xl:h-[320px] bg-[url('/assets/mobile-veritru.png')] bg-no-repeat bg-contain"></div>
+            <div className="absolute top-[-13rem] right-[-2rem] lg:top-[2rem] lg:right-[1rem] xl:top-0 xl:right-[1rem] w-[380px] h-[180px] lg:w-[500px] lg:h-[300px] xl:w-[600px] xl:h-[400px] bg-[url('../components/assets/img/laptop-veritru.png')] bg-no-repeat bg-contain"></div>
+            <div className="absolute top-[-11rem] right-0 lg:top-[4rem] lg:right-[1rem] xl:top-[2rem] xl:right-[1rem] w-[100px] h-[200px] lg:w-[150px] lg:h-[290px] xl:w-[180px] xl:h-[320px] bg-[url('../components/assets/img/mobile-veritru.png')] bg-no-repeat bg-contain"></div>
           </div>
         </div>
 
         {/* ONGOING PROJECT */}
         {/* Project - Veritru (Capstone Project) */}
-        <div className="bg-[#EBF4F3] relative flex flex-col-reverse h-[35rem] md:h-[25rem] p-8 rounded-xl shadow-lg overflow-hidden">
+        {/* <div className="bg-[#EBF4F3] relative flex flex-col-reverse h-[35rem] md:h-[25rem] p-8 rounded-xl shadow-lg overflow-hidden"> */}
+        <div className="bg-[#EBF4F3] relative flex flex-col-reverse h-[22rem] md:h-[25rem] p-8 rounded-xl shadow-lg overflow-hidden">
           {/* Background Div */}
           <div className="absolute inset-0 z-0">
             {/* Upper Left Circle */}
@@ -183,8 +184,8 @@ export function Works() {
             </Link>
           </div>
           {/* <div className="relative z-10">
-            <div className="absolute top-[-12rem] right-[-5rem] lg:top-[2rem] lg:right-[1rem] xl:top-0 xl:right-[1rem] w-[380px] h-[180px] lg:w-[500px] lg:h-[300px] xl:w-[600px] xl:h-[400px] bg-[url('/assets/laptop-veritru.png')] bg-no-repeat bg-contain"></div>
-            <div className="absolute top-[-10rem] right-[-2rem] lg:top-[4rem] lg:right-[1rem] xl:top-[2rem] xl:right-[1rem] w-[100px] h-[200px] lg:w-[150px] lg:h-[290px] xl:w-[180px] xl:h-[320px] bg-[url('/assets/mobile-veritru.png')] bg-no-repeat bg-contain"></div>
+            <div className="absolute top-[-13rem] right-[-2rem] lg:top-[2rem] lg:right-[1rem] xl:top-0 xl:right-[1rem] w-[380px] h-[180px] lg:w-[500px] lg:h-[300px] xl:w-[600px] xl:h-[400px] bg-[url('../components/assets/img/laptop-veritru.png')] bg-no-repeat bg-contain"></div>
+            <div className="absolute top-[-11rem] right-0 lg:top-[4rem] lg:right-[1rem] xl:top-[2rem] xl:right-[1rem] w-[100px] h-[200px] lg:w-[150px] lg:h-[290px] xl:w-[180px] xl:h-[320px] bg-[url('../components/assets/img/mobile-veritru.png')] bg-no-repeat bg-contain"></div>
           </div> */}
         </div>
       </div>

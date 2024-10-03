@@ -12,39 +12,39 @@ const montserrat = Montserrat({
 const nohemi = localFont({
   src: [
     {
-      path: './../../public/fonts/Nohemi-Thin.woff2',
+      path: '../components/assets/fonts/Nohemi-Thin.woff2',
       weight: '100',
     },
     {
-      path: './../../public/fonts/Nohemi-ExtraLight.woff2',
+      path: '../components/assets/fonts/Nohemi-ExtraLight.woff2',
       weight: '200',
     },
     {
-      path: './../../public/fonts/Nohemi-Light.woff2',
+      path: '../components/assets/fonts/Nohemi-Light.woff2',
       weight: '300',
     },
     {
-      path: './../../public/fonts/Nohemi-Regular.woff2',
+      path: '../components/assets/fonts/Nohemi-Regular.woff2',
       weight: '400',
     },
     {
-      path: './../../public/fonts/Nohemi-Medium.woff2',
+      path: '../components/assets/fonts/Nohemi-Medium.woff2',
       weight: '500',
     },
     {
-      path: './../../public/fonts/Nohemi-SemiBold.woff2',
+      path: '../components/assets/fonts/Nohemi-SemiBold.woff2',
       weight: '600',
     },
     {
-      path: './../../public/fonts/Nohemi-Bold.woff2',
+      path: '../components/assets/fonts/Nohemi-Bold.woff2',
       weight: '700',
     },
     {
-      path: './../../public/fonts/Nohemi-ExtraBold.woff2',
+      path: '../components/assets/fonts/Nohemi-ExtraBold.woff2',
       weight: '800',
     },
     {
-      path: './../../public/fonts/Nohemi-Black.woff2',
+      path: '../components/assets/fonts/Nohemi-Black.woff2',
       weight: '900',
     },
   ],
