@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Footer } from '@/components/footer'
 import { Navbar } from '@/components/navbar'
+import { Contact } from '@/components/sections/contact'
 import { Hero } from '@/components/sections/hero'
 import { Services } from '@/components/sections/services'
 import { Works } from '@/components/sections/works'
