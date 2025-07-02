@@ -12,7 +12,7 @@ export function Hero() {
           UI/UX DESIGNER
         </h2>
         <p className="mt-4 sm:mt-6 text-base md:text-lg font-semibold text-kat-primary">
-          With 2+ years of proven track record in designing intuitive and
+          With 3+ years of proven track record in designing intuitive and
           user-friendly solutions for web & mobile. I focus on producing
           beautifully crafted digital products and creating exceptional digital
           experiences.
